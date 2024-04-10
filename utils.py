@@ -1,3 +1,5 @@
+import numpy as np
+
 def param_heatmap(method,fig,ax,xparam,yparam,mesh,xlabel,ylabel,bestx,besty,log=False):
 
     x, y = np.meshgrid(xparam,yparam)
