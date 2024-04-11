@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.linalg import eigh
 
 class kPCA:
     """
@@ -141,6 +142,7 @@ class kPCA:
 
         numev: int, number of eigenvectors (alphas) to retain
         """
+        from scipy.linalg import eigh
 
         numev = self.q #use class default if none is specified
 

@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import metrics
 
 def param_heatmap(method,fig,ax,xparam,yparam,mesh,xlabel,ylabel,bestx,besty,log=False):
 
@@ -27,7 +29,7 @@ def param_scatter(method,fig,ax,xparam,aucs,xlabel,log=False):
     if log:
         ax.set_xscale('log')
 
-def decision_boundary_plot(x_train, x_test, y_test, models,Method):
+def decision_boundary_plot(x_train, x_test, y_test, x_val, y_val, models,Method):
   colors = ['g','r','b','m']
   #fig, axs = plt.subplots(2,2,figsize=(10,10))
   fig, axs = plt.subplots(1,1)
@@ -68,8 +70,7 @@ def decision_boundary_plot(x_train, x_test, y_test, models,Method):
     plt.subplots_adjust(wspace=0.25, hspace=0.25)
 
 
-
-def ROC_curve(y_test, scores, key):
+def ROC_curve(y_test, scores, test_aucs, key):
   methods = ['kPCA','PCA','ParzenWindow','OCSVM']
   fig, ax = plt.subplots(figsize=(7,7))
   colors = ['g','r','b','m']
