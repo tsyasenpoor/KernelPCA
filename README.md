@@ -1,7 +1,7 @@
 # KernelPCA
 
 ## Description
-This project implements the Kernel PCA technique for novelty detection as explored in the paper by Heiko Hoffmann[1]. The technique extends the traditional PCA to handle non-linear data distributions and is particularly good at identifying novel patterns in datasets where novel examples are rare compared to normal examples. This repository contains the code implementation and dataset samples for replicating the study's findings on synthetic and real-world datasets, including handwritten digits and breast-cancer cytology.
+This project implements the Kernel PCA technique for novelty detection as explored in the paper by [Heiko Hoffmann](#ref) [1]. The technique extends the traditional PCA to handle non-linear data distributions and is particularly good at identifying novel patterns in datasets where novel examples are rare compared to normal examples. This repository contains the code implementation and dataset samples for replicating the study's findings on synthetic and real-world datasets, including handwritten digits and breast-cancer cytology.
 
 ## Key Features
 * **Kernel PCA Implementation:** Core implementation of the Kernel PCA algorithm.
